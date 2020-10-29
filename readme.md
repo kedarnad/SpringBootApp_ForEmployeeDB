@@ -1,9 +1,8 @@
 This is the coding Challenge from Mindex.
 
 # How to run the application?
-1.  cd into the 'mindex-java-coding-challenge' and run './gradlew bootRun'
-2.  now go into the 'TestCases' folder and run 'python TestAPI.py' this will run all  the testcases required for all the endpoints. 
-
+1.  cd into the 'SpringApplication' and run './gradlew bootRun'
+2.  now go into the 'TestCases' folder from the parent directory and run 'python TestAPI.py' this will run all  the testcases required for all the endpoints. 
 
 # Requirements:
 1. Install gradle Spring Dependences from spring initializer.
