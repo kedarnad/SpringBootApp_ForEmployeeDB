@@ -1,7 +1,5 @@
 package com.mindex.challenge.data;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 
 import java.text.ParseException;
@@ -16,14 +14,26 @@ public class Compensation {
     private Date effectiveDateFinalFormat; // effective date in the date format
 //
     @Transient
-    private String pattern = "MM-dd-yyyy"; // making a transient variable
+    private String TrueFormat = "MM-dd-yyyy"; // making a transient variable
 //
-    @Transient
-    private SimpleDateFormat dateFormat= new SimpleDateFormat(pattern); // specifying the generic format of the
+    @Transient // created the transient variable for particular date type format
+    private SimpleDateFormat dateFormat= new SimpleDateFormat(TrueFormat); // specifying the generic format of the
                                                                         // date composition
-//
+
 
     private String effectiveDate;
+
+    @Override
+    public String toString() {
+        return "Compensation{" +
+                "employee=" + employee +
+                ", salary=" + salary +
+                ", effectiveDateFinalFormat=" + effectiveDateFinalFormat +
+                ", pattern='" + TrueFormat + '\'' +
+                ", dateFormat=" + dateFormat +
+                ", effectiveDate='" + effectiveDate + '\'' +
+                '}';
+    }
 
     public Compensation(){
     }

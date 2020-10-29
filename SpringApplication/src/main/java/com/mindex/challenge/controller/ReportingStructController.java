@@ -21,6 +21,9 @@ public class ReportingStructController {
 
     @GetMapping("/reportingStruct/{id}") //because we would want to query on the id:
     public ReportingStruct read(@PathVariable String id){
+        /**
+         * Endpoint created for the reading the Getting the Reporting Structure per employee:
+         */
         LOG.debug("Fetching a GET request for employee with id: [{}]", id);
 
         return employeeService.getReportingStructure(id);

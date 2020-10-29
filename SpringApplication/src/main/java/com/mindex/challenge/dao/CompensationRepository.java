@@ -8,5 +8,6 @@ import java.util.List;
 
 @Repository
 public interface CompensationRepository extends MongoRepository<Compensation, String> {
+    // created a compensation repository structure:
     public List<Compensation> findByEmployeeEmployeeId(String id);
 }

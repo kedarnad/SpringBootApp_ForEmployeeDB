@@ -6,5 +6,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 @Repository
 public interface EmployeeRepository extends MongoRepository<Employee, String> {
+    // employee repository structure.
     Employee findByEmployeeId(String employeeId);
 }
