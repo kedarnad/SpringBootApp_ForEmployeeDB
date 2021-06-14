@@ -1,4 +1,4 @@
-This is the coding Challenge from Mindex.
+
 
 # How to run the application?
 1.  cd into the 'SpringApplication' and run './gradlew bootRun'
